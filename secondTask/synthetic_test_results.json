@@ -1,0 +1,144 @@
+{
+  "report": {
+    "total_products": 6,
+    "total_defects": 6,
+    "defective_products": {
+      "101": {
+        "title": "",
+        "defects": [
+          "Empty 'title' attribute"
+        ]
+      },
+      "102": {
+        "title": "Product with negative price",
+        "defects": [
+          "Negative price: -19.99"
+        ]
+      },
+      "103": {
+        "title": "Product with high rating",
+        "defects": [
+          "Rating exceeds 5: 6.5"
+        ]
+      },
+      "104": {
+        "title": "Product missing price",
+        "defects": [
+          "Missing 'price' attribute"
+        ]
+      },
+      "105": {
+        "title": "Product missing rating",
+        "defects": [
+          "Missing 'rating' attribute"
+        ]
+      },
+      "106": {
+        "title": "Unknown",
+        "defects": [
+          "Missing 'title' attribute"
+        ]
+      }
+    },
+    "summary": {
+      "api_response_errors": 0,
+      "missing_attributes": 3,
+      "empty_values": 1,
+      "invalid_values": 2
+    }
+  },
+  "detailed_defects": [
+    {
+      "type": "Product Validation Error",
+      "product_id": 101,
+      "product_title": "",
+      "error": "Empty 'title' attribute"
+    },
+    {
+      "type": "Product Validation Error",
+      "product_id": 102,
+      "product_title": "Product with negative price",
+      "error": "Negative price: -19.99"
+    },
+    {
+      "type": "Product Validation Error",
+      "product_id": 103,
+      "product_title": "Product with high rating",
+      "error": "Rating exceeds 5: 6.5"
+    },
+    {
+      "type": "Product Validation Error",
+      "product_id": 104,
+      "product_title": "Product missing price",
+      "error": "Missing 'price' attribute"
+    },
+    {
+      "type": "Product Validation Error",
+      "product_id": 105,
+      "product_title": "Product missing rating",
+      "error": "Missing 'rating' attribute"
+    },
+    {
+      "type": "Product Validation Error",
+      "product_id": 106,
+      "product_title": "Unknown",
+      "error": "Missing 'title' attribute"
+    }
+  ],
+  "test_data": [
+    {
+      "id": 101,
+      "title": "",
+      "price": 49.99,
+      "category": "test",
+      "rating": {
+        "rate": 4.2,
+        "count": 100
+      }
+    },
+    {
+      "id": 102,
+      "title": "Product with negative price",
+      "price": -19.99,
+      "category": "test",
+      "rating": {
+        "rate": 3.5,
+        "count": 50
+      }
+    },
+    {
+      "id": 103,
+      "title": "Product with high rating",
+      "price": 39.99,
+      "category": "test",
+      "rating": {
+        "rate": 6.5,
+        "count": 200
+      }
+    },
+    {
+      "id": 104,
+      "title": "Product missing price",
+      "category": "test",
+      "rating": {
+        "rate": 4.0,
+        "count": 75
+      }
+    },
+    {
+      "id": 105,
+      "title": "Product missing rating",
+      "price": 29.99,
+      "category": "test"
+    },
+    {
+      "id": 106,
+      "price": 59.99,
+      "category": "test",
+      "rating": {
+        "rate": 3.8,
+        "count": 125
+      }
+    }
+  ]
+}

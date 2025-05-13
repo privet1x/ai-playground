@@ -1,0 +1,14 @@
+{
+  "report": {
+    "total_products": 20,
+    "total_defects": 0,
+    "defective_products": {},
+    "summary": {
+      "api_response_errors": 0,
+      "missing_attributes": 0,
+      "empty_values": 0,
+      "invalid_values": 0
+    }
+  },
+  "detailed_defects": []
+}
